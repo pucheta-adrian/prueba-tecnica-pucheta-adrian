@@ -28,13 +28,12 @@
     <div class="col-4">
       <div class="mb-3 mt-5">
         <label for="username" class="form-label">Nombre de usuario</label>
-        <input type="text" name="username" id="username" v-model="username" class="form-control" autofocus>
+        <input type="text" name="username" id="username" v-model="username" class="form-control" autofocus @keyup.enter="next">
       </div>
       <button 
         type="button" 
         class="btn btn-sm btn-primary" 
-        @click="next" 
-        @keyup.enter="next">
+        @click="next" >
         Ingresar
       </button>
     </div>
